@@ -1,0 +1,30 @@
+#footerContent{
+    height: 100px;
+    background-color: #1C5A3D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#pgraphFooter{
+    color: #fff;
+}
+#creator{
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 2px solid #000000;
+}
+
+@media screen and (max-width: 480px) {
+    #pgraphFooter{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #pgraphFooter{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    
+}

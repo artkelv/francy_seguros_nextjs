@@ -1,0 +1,194 @@
+.mainContent{
+    background-image: url(../public/img/photo_family_02.jpg);
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: 2px solid #066950;
+    background-color: #fff;
+    border-radius: 30px;
+    transition: 1s;
+    /* &:hover{
+        box-shadow: 10px 10px 10px #078C6B; 
+    } */
+}
+
+#titleForm{
+    font-size: 16px ;
+    color: #066950;
+    text-align: center;
+    margin: 0;
+    padding: 18px 0 12px;
+}
+#subTitleForm{
+    color: #078C6B;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.inputForm{
+    font-size: 12px;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid #078C6B;
+    border-radius: 10px;
+    outline: unset;
+    transition: 0.5s;
+}
+.inputForm:focus{
+    box-shadow: 1px 1px 10px #10CEA0;
+}
+#selectForm{
+    font-size: 12px;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid #078C6B;
+    border-radius: 10px;
+    outline: unset;
+}
+#selectForm:focus{
+    box-shadow: 1px 1px 10px #10CEA0;
+}
+#btnSend{
+    width: 90%;
+    background-color: #044837 ;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+#btnSend:hover{
+    background-color: #066950;
+}
+#pprivacity{
+    font-size: 12px;
+    text-align: center;
+    color: #1C5A3D;
+    margin: 12px;
+}
+#sectionTitles{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+#title{
+    color: #fff;
+    background-color:rgba(13,35,40,0.6);
+    display: inline-block;
+    font-weight: 400;
+    padding: 5px 10px;
+    font-size: 40px;
+}
+#subTitle{
+    color: #fff;
+    background-color:rgba(13,35,40,0.6);
+    margin: 50px 30px 100px 0;
+    font-weight: 400;
+    padding: 5px 10px;
+    font-size: 30px;
+}
+#sectionBroker{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#ancorForBroker{
+    margin-left: 10px;
+    border: 1px solid #4BE572;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    background-color: rgba(114,229,91, 0.8);
+    transition:0.2s;
+    margin-right: 10vw;
+}
+#ancorForBroker:hover{
+    box-shadow: 1px 1px 15px #4BE572;
+}
+
+@media screen and (max-width: 480px) {
+    .mainContent{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    #sectionTitles{
+        align-items: center;
+    }    
+    .form{
+        order: 2;
+    }
+    #sectionTitles{
+        height: 100px;
+    }
+    #title{
+       font-size: 17px; 
+    }
+    #subTitle{
+        font-size: 13px; 
+        margin: 0;
+    }
+    #imgWhatsapp{
+        display: none;
+    }
+    #ancorForBroker{
+        display: none;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .mainContent{
+        flex-direction: column;
+        background-color: #066950;
+        padding-bottom: 20px;
+    }
+    #sectionTitles{
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .form{
+        order: 2;
+    }
+    #title{
+        font-size: 25px;
+    }
+    #subTitle{
+        font-size: 20px;
+        margin: 0;
+    }
+    #imgWhatsapp{
+        display: none;
+    }
+    #ancorForBroker{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768.1px) and (max-width: 1024px){
+    #title{
+        font-size: 22px;
+    }
+    #subTitle{
+        font-size: 19px;
+        margin: 0;
+    }
+    #sectionBroker{
+        margin-top: 20px;
+    }
+    #ancorForBroker{
+        margin-right: 0;
+    }
+}

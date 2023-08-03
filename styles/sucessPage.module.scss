@@ -1,0 +1,129 @@
+#containerSucessPage{
+    display: flex;
+    background-color: #066950;
+}
+#imgSucess{
+    width: 50%;
+    height: 100vh;
+    background-image: url(../public/img/sucess-request.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#sectionTitles{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+#contentTitles{
+    width: 350px;
+    border: 1px solid #ffffff;
+    margin: 0 auto;
+    padding: 50px;
+}
+#title{
+    font-size: 40px;
+    color: #ffffff;
+}
+#subTitle{
+    color: #adadad;
+    margin: 0 0 30px 0;
+}
+//doubt = duvida
+#doubt{
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+#ancorGoHome{
+    text-decoration: none;
+    color: #066950;
+    background-color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    &:hover{
+        color: #fff;
+        border: 1px solid #fff;
+        background-color: #066950;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    #containerSucessPage{
+        height: 100vh;
+        justify-content: center;
+        background-image: url(../public/img/sucess-request.jpg);
+        //background-size: cover;
+        background-position: center;
+    }
+    #imgSucess{
+        display: none;
+    }
+    #sectionTitles{
+        width: 80vw;
+    }
+    #contentTitles{
+        background-color: #066950e8;
+        //border: 1px solid #fff;
+        border: none;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #doubt{
+        font-size: 15px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #containerSucessPage{
+        height: 100vh;
+        justify-content: center;
+        background-image: url(../public/img/sucess-request.jpg);
+        background-position: center;
+    }
+    #imgSucess{
+        display: none;
+    }
+    #sectionTitles{
+        width: 80vw;
+    }
+    #contentTitles{
+        background-color: #066950e8;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #title{
+        font-size: 30px;
+    }
+    #doubt{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    #containerSucessPage{
+        height: 100vh;
+        justify-content: center;
+        background-image: url(../public/img/sucess-request.jpg);
+        background-position: center;
+    }
+    #subTitle{
+        text-align: center;
+    }
+    #imgSucess{
+        display: none;
+    }
+    #contentTitles{
+        background-color: #066950ef;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #doubt{
+        text-align: center;
+    }
+}

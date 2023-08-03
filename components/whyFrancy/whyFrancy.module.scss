@@ -1,0 +1,150 @@
+.containerWhyFrancy{
+    background-image: url(../../public/img/background_main.png);
+    background-size: contain;
+    margin-bottom: 100px;
+}
+#content{
+    width: 80%;
+    background-color: #fff;
+    margin: 0 auto; 
+    padding: 0 50px 50px;
+    box-sizing: border-box;
+}
+#subContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#titleWhyFrancy{
+    color: #1C5A3D;
+    background-color: #fff;
+    padding: 50px 0;
+    font-size: 180%;
+    font-weight: 800;
+    text-align: center;
+}
+#sectionMain{
+    display: flex;
+    justify-content: center;
+}
+#firstSection{
+    width: 100%;
+    //background-color: rgb(119, 150, 235);
+}
+#secondSection{
+    width: 100%;
+    //background-color: rgb(142, 238, 178);
+}
+.boxArticle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 5px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.description > h3{
+    margin: 25px 0;
+    color: #066950;
+}
+.description > p{
+    text-align: center;
+    color: #7C7878;
+}
+#figureEndSection{
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 auto;
+    width: 95%;
+    height: 300px;
+    background-image: url(../../public/img/happy_women.jpg);
+    background-size: cover;
+}
+#goForBroker{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ancorWpp{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1C5A3D;
+    padding: 5%;
+    margin: 0 5px;
+    border: 1px solid #4BE572;
+    background-color: rgba(114,229,91, 0.3);
+    transition: 0.2s;
+}
+#ancorWpp:hover{
+    box-shadow: 1px 1px 15px #4BE572;
+    background-color: #fff;
+    color: #1C5A3D;
+}
+
+@media screen and (max-width: 480px) {
+    #arrowRight{
+        display: none;
+    }
+    #titleWhyFrancy{
+        text-align: center;
+    }
+    #sectionMain{
+        flex-direction: column;
+    }
+    #figureEndSection{
+        justify-content: center;
+    }
+    #goForBroker{
+        width: 300px;
+    }
+    #ancorWpp{
+        background-color: rgba(51, 99, 41, 0.822);
+        color: #fff;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #arrowRight{
+        display: none;
+    }
+    #titleWhyFrancy{
+        text-align: center;
+    }
+    #sectionMain{
+        flex-direction: column;
+    }
+    #figureEndSection{
+        justify-content: center;
+    }
+    #goForBroker{
+        width: 300px;
+    }
+    #ancorWpp{
+        background-color: rgba(51, 99, 41, 0.822);
+        color: #fff;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    #arrowRight{
+        display: none;
+    }
+    #titleWhyFrancy{
+        text-align: center;
+    }
+    #figureEndSection{
+        justify-content: center;
+    }
+    #goForBroker{
+        width: 300px;
+    }
+    #ancorWpp{
+        background-color: rgba(51, 99, 41, 0.822);
+        color: #fff;
+    }
+}
