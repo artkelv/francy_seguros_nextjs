@@ -45,6 +45,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Francy Seguros - Planos de Saúde e Odontológico | Melhores Opções.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="description" content="Encontre o melhor plano de saúde, odontológico ou empresarial para você e sua família. Cote agora com as melhores seguradoras do mercado." />
         <meta property="og:site_name" content="Francy Seguros" />
         <meta property="og:title" content="Francy Seguros | Planos de Saúde e Odontológicos" />
