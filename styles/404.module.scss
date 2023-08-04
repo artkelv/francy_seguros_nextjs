@@ -1,0 +1,172 @@
+#container{
+    background-color: #066950;
+    height: 100vh;
+}
+
+#navLinks{
+    width: 80%;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+#unListLinks{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 40%;
+}
+#benefits, #plans{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #fff;
+    display: block;
+    text-align: center;
+    width: 100px;
+    padding: 5px 0;
+    border-radius: 10px;
+    &:hover{
+        box-shadow: 1px 1px 10px #fff;
+    }
+}
+#ancorCall{
+    color: #066950;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    width: 100px;
+    padding: 5px 0;
+    text-align: center;
+    &:hover{
+        box-shadow: 1px 1px 10px #fff;
+    }
+}
+.sectionInfo{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+#content{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#title{
+    color: #ffffff;
+    font-size: 40px;
+}
+#description{
+    color: #adadad;
+}
+#ancor{
+    background-color: #ffffff;
+    color: #066950;
+    text-decoration: none;
+    display: block;
+    width: 250px;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    transition: 1s;
+    &:hover{
+       border-radius: 30px; 
+    }
+}
+#img404{
+    width: 400px;
+}
+@media screen and (max-width: 480px) {
+    #unListLinks{
+        width: 100%;
+    }
+    #img404{
+        display: none;
+    }
+    #content{
+        align-items: center;
+    }
+    #title{
+        text-align: center;
+    }
+    #description{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #navLinks{
+        height: 150px;
+        justify-content: center;
+    }
+    #plans, #ancorCall, #benefits{ 
+        border: 2px solid #fff;
+        width: 120px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    #unListLinks{
+        width: 100%;
+    }
+    #content{
+        align-items: center;
+    }
+    #title{
+        text-align: center;
+    }
+    #description{
+        text-align: center;
+    }
+    #img404{
+        display: none;
+    } 
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    #navLinks{
+        justify-content: center;
+        height: 150px;
+    }
+    #unListLinks{
+        width: 80%;
+    }
+    #plans, #ancorCall, #benefits{ 
+        border: 2px solid #fff;
+        width: 150px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    #content{
+        height: auto;
+    }
+    #img404{
+        width: 300px;
+    }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px){
+    #navLinks{
+        height: 200px;
+    }
+    #plans, #ancorCall, #benefits{ 
+        border: 2px solid #fff;
+        width: 150px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    #title{
+        font-size: 50px;
+    }
+    #description{
+        font-size: 20px;
+    }
+    #ancor{
+        font-size: 20px;
+    }
+    #img404{
+        width: 550px;
+    }
+}
