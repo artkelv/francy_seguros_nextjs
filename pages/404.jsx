@@ -2,10 +2,14 @@ import Image from "next/image";
 import img404 from "@/public/img/not_found_background.svg";
 import styles from "@/styles/404.module.scss";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Page404(){
     return(
         <div id={styles.container}>
+            <Head>
+                <title>Página não encontrada</title>
+            </Head>
             <nav id={styles.navLinks}>
                 <ul id={styles.unListLinks}>
                     <li>

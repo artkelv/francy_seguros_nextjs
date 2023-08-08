@@ -11,13 +11,17 @@ import Footer from '@/components/footer/Footer';
 
 import styles from "@/styles/index.module.scss" ;
 import Head from 'next/head';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  const router = useRouter()
 
   const [name, setName] =  useState('');
   const [email, setEmail] =  useState('');
   const [tellPhone, setTellphone] =  useState('');
   const [plan, setPlan] =  useState('Individual');
+  const [irPara, setIrPara] = useState('/sucess');
+
   async function sendMessageByBroker(e){
     e.preventDefault()
     try {
@@ -30,14 +34,13 @@ export default function Home() {
       });
 
       if (response.ok) {
-        alert('E-mail enviado com sucesso!');
+        setIrPara('/sucess')
       } else {
         const data = await response.json();
-        alert(`Erro: ${data.error}`);
+        setIrPara('/notsucess')
       }
     } catch (error) {
-      console.error('Erro ao enviar o e-mail:', error);
-      alert('Ocorreu um erro ao enviar o e-mail.');
+      setIrPara('/notsucess')
     }
   }
 
@@ -45,6 +48,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Francy Seguros - Planos de Saúde e Odontológico | Melhores Opções.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="description" content="Encontre o melhor plano de saúde, odontológico ou empresarial para você e sua família. Cote agora com as melhores seguradoras do mercado." />
         <meta property="og:site_name" content="Francy Seguros" />
         <meta property="og:title" content="Francy Seguros | Planos de Saúde e Odontológicos" />
@@ -72,7 +76,7 @@ export default function Home() {
                 <option value="Familiar" >Familiar</option>
                 <option value="Empresarial" >Empresarial</option>
               </select>
-            <button id={styles.btnSend} type='submit'>Pedir cotação</button>
+            <button id={styles.btnSend} onClick={() => router.push(`${irPara}`)} type='submit'>Pedir cotação</button>
             <p id={styles.pprivacity}>Privacidade 100% garantida.</p>
         </form>
         <section id={styles.sectionTitles}>
