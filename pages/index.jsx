@@ -13,6 +13,7 @@ import styles from "@/styles/index.module.scss" ;
 import Head from 'next/head';
 import { useRouter } from 'next/navigation';
 import WhatsaAndInsta from '@/components/whatsAndInsta/whatsaAndInsta';
+import WebtechAd from '@/components/webtechAd/webtechAd';
 
 export default function Home() {
   const router = useRouter()
@@ -90,6 +91,7 @@ export default function Home() {
       <WhyFrancy/>
       <Plans/>
       <Operators/>
+      <WebtechAd/>
       <Footer/>
       <WhatsaAndInsta/>
     </div>
