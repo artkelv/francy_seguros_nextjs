@@ -11,7 +11,9 @@ export default async function sendMessageFrancy(name, email, tellPhone, plan){
     auth: {
       user: process.env.GOOGLE_USER,
       pass: process.env.GOOGLE_PASS,
-    },
+    },tls: {
+      rejectUnauthorized: false // não verificar o certificado
+  }
   });
 
   const mailOptions = {
@@ -32,5 +34,12 @@ export default async function sendMessageFrancy(name, email, tellPhone, plan){
 
   const sendEmail = await transporter.sendMail(mailOptions)
   
-  const resposta = sendEmail.response.includes("250 2.0.0 OK")
+  try {  
+    if(sendEmail.response.includes("250 2.0.0 OK")){
+      console.log("deu certo",sendEmail)
+    }
+  } catch (error) {
+    console.log("deu errado", sendEmail)
+  }
+  
 }

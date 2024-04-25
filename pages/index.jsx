@@ -12,6 +12,7 @@ import Footer from '@/components/footer/Footer';
 import styles from "@/styles/index.module.scss" ;
 import Head from 'next/head';
 import { useRouter } from 'next/navigation';
+import WhatsaAndInsta from '@/components/whatsAndInsta/whatsaAndInsta';
 
 export default function Home() {
   const router = useRouter()
@@ -35,9 +36,6 @@ export default function Home() {
 
       if (response.ok) {
         setIrPara('/sucess')
-      } else {
-        const data = await response.json();
-        setIrPara('/notsucess')
       }
     } catch (error) {
       setIrPara('/notsucess')
@@ -60,7 +58,7 @@ export default function Home() {
         <meta name="keywords" content="planos de saúde, planos odontológicos, saúde, odontologia, seguro saúde, convênio médico, tratamento odontológico, saúde bucal, exames médicos, consultas médicas, prevenção de doenças, plano de saúde para empresas, plano de saúde para família, plano de saúde individual" />
         <meta name="robots" content="index,follow" />
         <meta name="googlebot" content="index,follow" />
-        <meta name="author" content="Arthur Kelvim" />
+        <meta name="author" content="WebTech - Soluções Digitais" />
         <link rel="canonical" href="https://francyseguros.com/" />
       </Head>
       <Header/>
@@ -93,6 +91,7 @@ export default function Home() {
       <Plans/>
       <Operators/>
       <Footer/>
+      <WhatsaAndInsta/>
     </div>
   )
 }
