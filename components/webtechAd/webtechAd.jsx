@@ -11,7 +11,7 @@ export default function WebtechAd() {
             </div>
         </div>
         <div id={styles.goButtons}>
-            <a id={styles.goWebtechSite} href="https://api.whatsapp.com/send?phone=5561982434868&amp;text=Olá, vim do site Francy Seguros e gostaria de anunciar em seu site!">Visitar Site</a>
+            <a id={styles.goWebtechSite} href="https://webtechservicos.com.br/">Visitar Site</a>
             <a id={styles.wantSite} href="https://api.whatsapp.com/send?phone=5561982434868&amp;text=Olá, vim do site Francy Seguros e gostaria de um site personalizado!">Quero um Site</a>  
         </div>
     </div>

@@ -13,18 +13,18 @@ export default function Plans() {
         <section id={styles.cards}>
           <div id={styles.firstCardPrice}>
             <section>
-              <h3 className={styles.titleCard}>SulÁmerica</h3>
+              <h3 className={styles.titleCard}>MedSênior</h3>
               <h4 className={styles.subTitleCard}>a partir de</h4>
             </section>
             <section>
-              <p className={styles.priceCard}>$ 119,90</p>
+              <p className={styles.priceCard}>$ 758,60</p>
               <p className={styles.perMonth}>por mês</p>
             </section>
             <section className={styles.sectionUl}>
               <ul className={styles.unList}>
                 <li className={styles.descCard}>
                   <Ic />
-                  <p className={styles.roll}>Consultas Médicas</p>
+                  <p className={styles.roll}>Consultas Eletivas</p>
                 </li>
                 <li className={styles.descCard}>
                   <Ic />
@@ -32,11 +32,11 @@ export default function Plans() {
                 </li>
                 <li className={styles.descCard}>
                   <Ic />
-                  <p className={styles.roll}>Atendimento 24hrs</p>
+                  <p className={styles.roll}>Emergência 24 horas</p>
                 </li>
                 <li className={styles.descCard}>
                   <Ic />
-                  <p className={styles.roll}>Homecare e Parto</p>
+                  <p className={styles.roll}>Hospital Próprio</p>
                 </li>
                 <li className={styles.descCard}>
                   <Ic />
@@ -48,12 +48,12 @@ export default function Plans() {
           </div>
           <div id={styles.secondCardPrice}>
             <section>
-              <h3 className={styles.titleCard}>Amil 400</h3>
+              <h3 className={styles.titleCard}>Quallity</h3>
               <h4 className={styles.subTitleCard}>a partir de</h4>
             </section>
             <section>
-              <p className={styles.priceCard}>$ 240,90</p>
-              <p className={styles.perMonth}>por mês</p>
+              <p className={styles.priceCard}>$ 285,08</p>
+              <p className={styles.perMonth}>por mês c/coparticipação</p>
             </section>
             <section className={styles.sectionUl}>
               <ul className={styles.unList}>
@@ -67,11 +67,11 @@ export default function Plans() {
                 </li>
                 <li className={styles.descCard}>
                   <Ic />
-                  <p className={styles.roll}>Atendimento 24hrs</p>
+                  <p className={styles.roll}>Emergência 24hrs</p>
                 </li>
                 <li className={styles.descCard}>
                   <Ic />
-                  <p className={styles.roll}>Homecare e Parto</p>
+                  <p className={styles.roll}>Parto</p>
                 </li>
                 <li className={styles.descCard}>
                   <Ic />
@@ -83,18 +83,18 @@ export default function Plans() {
           </div>
           <div id={styles.thirdCardPrice}>
             <section>
-              <h3 className={styles.titleCard}>Bradesco Saúde</h3>
+              <h3 className={styles.titleCard}>Unividas</h3>
               <h4 className={styles.subTitleCard}>a partir de</h4>
             </section>
             <section>
-              <p className={styles.priceCard}>$ 339,90</p>
+              <p className={styles.priceCard}>$ 197,86</p>
               <p className={styles.perMonth}>por mês</p>
             </section>
             <section className={styles.sectionUl}>
               <ul className={styles.unList}>
                 <li className={styles.descCard}>
                 <Ic />
-                  <p className={styles.roll}>Consultas Médicas</p>
+                  <p className={styles.roll}>Consultas Eletivas</p>
                 </li>
                 <li className={styles.descCard}>
                   <Ic />
@@ -102,11 +102,11 @@ export default function Plans() {
                 </li>
                 <li className={styles.descCard}>
                   <Ic />
-                  <p className={styles.roll}>Atendimento 24hrs</p>
+                  <p className={styles.roll}>Emergência 24hrs</p>
                 </li>
                 <li className={styles.descCard}>
                   <Ic />
-                  <p className={styles.roll}>Homecare e Parto</p>
+                  <p className={styles.roll}>Parto</p>
                 </li>
                 <li className={styles.descCard}>
                   <Ic />
@@ -118,34 +118,34 @@ export default function Plans() {
           </div>
           <div id={styles.fourthCardPrice}>
             <section>
-              <h3 className={styles.titleCard}>Unimed Rio</h3>
+              <h3 className={styles.titleCard}>HapVida</h3>
               <h4 className={styles.subTitleCard}>a partir de</h4>
             </section>
             <section>
-              <p className={styles.priceCard}>$ 229,90</p>
+              <p className={styles.priceCard}>$ 146,89</p>
               <p className={styles.perMonth}>por mês</p>
             </section>
             <section className={styles.sectionUl}>
               <ul className={styles.unList}>
                 <li className={styles.descCard}>
                   <Ic />
-                  <p className={styles.roll}>Consultas Médicas</p>
+                  <p className={styles.roll}>Consultas e Exames</p>
                 </li>
                 <li className={styles.descCard}>
                   <Ic />
-                  <p className={styles.roll}>Todos os exames</p>
+                  <p className={styles.roll}>Hospital Próprio</p>
                 </li>
                 <li className={styles.descCard}>
                   <Ic />
-                  <p className={styles.roll}>Atendimento 24hrs</p>
+                  <p className={styles.roll}>Emergência 24hrs</p>
                 </li>
                 <li className={styles.descCard}>
                   <Ic />
-                  <p className={styles.roll}>Homecare e Parto</p>
+                  <p className={styles.roll}>Pronto Socorro</p>
                 </li>
                 <li className={styles.descCard}>
                   <Ic />
-                  <p className={styles.roll}>Cirurgias e internações</p>
+                  <p className={styles.roll}>CPT de 12h ambulatorio</p>
                 </li>
               </ul>
             </section>
