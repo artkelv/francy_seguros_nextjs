@@ -43,7 +43,7 @@
     margin: 30px 20px 5px;
 }
 .subTitleCard{
-    color: #668EF5;
+    color: #f0f0f0;
     display: block;
     text-align: center;
     font-size: 11px;
@@ -58,9 +58,9 @@
 }
 .perMonth{
     font-size: 12px;
-    text-transform: uppercase;
+    text-transform:capitalize;
     display: block;
-    color: #668EF5;
+    color: #ffffff;
     text-align: center;
     font-weight: bold;
 }
@@ -105,7 +105,7 @@
 
 
 #firstCardPrice{
-    background-color: #0D2329;
+    background-color: #1ec50f;
     width: 230px;
     margin: 5px;
 }
@@ -115,12 +115,12 @@
     margin: 5px;
 }
 #thirdCardPrice{
-    background-color: #50D371;
+    background-color: #40a1da;
     width: 230px;
     margin: 5px;
 }
 #fourthCardPrice{
-    background-color: #10CEA0;
+    background-color: #e7870a;
     width: 230px;
     margin: 5px;
 }
