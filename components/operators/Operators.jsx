@@ -1,5 +1,5 @@
 import Image from "next/image"
-import operadoras from "@/public/img/operadoras.png"
+import operadoras from "@/public/img/operadoras_att.png"
 import styles from "@/components/operators/operators.module.scss"
 
 export default function Operators() {
